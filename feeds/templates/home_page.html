@@ -229,20 +229,14 @@
                 <h1>MY WORK</h1>
             </div>
             <div class="small-container">
-                <div class="row3">
+                <div >
                     {% for sys in skills %}
                     <div class="card initial-6  w- aos-init" data-aos="zoom-in" data-aos-delay="500">
-
-                        
-
-
-                        <div class="card-body col-5-info px-3 py-3">
+                        <div class="card-body col-5-info px-3 py-3" >
                             <h3 class="pb-1">{{sys.title}}</h3>
                             <p class="pb-1">{{sys.skill}}</p>
                             <button><a href="{{sys.link}}">VISIT</a></button>
-
                         </div>
-
                     </div>
                     {% endfor %}
 
@@ -264,7 +258,7 @@
                                          {% for infor in info %}
    
                     <div class="col-md-6 initial-8 aos-init" data-aos="fade-down-right" data-aos-delay="300">
-                        <p id="helo">Wanna talk about a project or just saying hi <img src="{%  static 'images/e.png' %}" alt="" id="e" class="wave"></p>
+                        <p id="helo">Wanna talk about a project or just say Hi <img src="{%  static 'images/e.png' %}" alt="" id="e" class="wave"></p>
 
                         <div class="contact-info">
                             <div class="c-ico">
@@ -305,7 +299,6 @@
                     <div class="row justify-content-center ">
                         <div class="col-md-4 ">
                             <p>Designed By: </p>
-                            <p>Om Gupta</p>
                             <p>OG Developer 💚</p>
                         </div>
                     </div>
