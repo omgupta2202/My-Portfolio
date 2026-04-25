@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+    <title>Om Gupta — Backend Systems Engineer</title>
+    <meta
+      name="description"
+      content="Om Gupta — Backend Systems Engineer specializing in distributed systems, scalable APIs, and AI orchestration. Sub-100ms responses, zero downtime."
+    />
+    <meta name="author" content="Om Gupta" />
+
+    <meta property="og:title" content="Om Gupta — Backend Systems Engineer" />
+    <meta
+      property="og:description"
+      content="Distributed systems · AI orchestration · Sub-100ms responses."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Ambient grid + gradient backdrop -->
+    <div class="backdrop" aria-hidden="true">
+      <div class="backdrop__grid"></div>
+      <div class="backdrop__glow backdrop__glow--a"></div>
+      <div class="backdrop__glow backdrop__glow--b"></div>
+    </div>
+
+    <!-- Top navigation -->
+    <header class="nav">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">OG</span>
+        <span class="nav__brand-meta">
+          <span class="nav__brand-name">Om Gupta</span>
+          <span class="nav__brand-role">Software Engineer</span>
+        </span>
+      </a>
+      <nav class="nav__links">
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav__cta" href="mailto:omgupta.se@gmail.com">
+        <span class="dot dot--live"></span>
+        <span>Open to work</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__meta">
+          <span class="dot dot--live"></span>
+          <span class="hero__meta-text">
+            <span class="muted">Status:</span> Shipping at Nickelfox
+          </span>
+          <span class="hero__meta-sep">·</span>
+          <span class="hero__meta-text">
+            <span class="muted">Based in:</span> India · UTC+5:30
+          </span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">Backend engineer</span>
+          <span class="hero__title-line hero__title-line--accent">building for production.</span>
+        </h1>
+
+        <p class="hero__sub">
+          I’m <strong>Om Gupta</strong>, a Software Development Engineer at
+          <strong>Nickelfox Technologies</strong>. I work on Django and
+          Django REST Framework APIs backed by PostgreSQL and Redis, plus
+          a few RAG and LLM-orchestration projects on the side.
+        </p>
+
+        <!-- Terminal card -->
+        <div class="terminal" role="presentation">
+          <div class="terminal__chrome">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">~/om-gupta — zsh</span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="prompt">›</span> whoami</p>
+            <p class="out">Om Gupta · SDE @ Nickelfox Technologies</p>
+            <p><span class="prompt">›</span> cat about.txt</p>
+            <p class="out quote">
+              I build Django + DRF backends, tune PostgreSQL queries, and
+              wire LLMs into real products.
+            </p>
+            <p><span class="prompt">›</span> now --working-on</p>
+            <p class="out" id="now-line">
+              <span class="rotator" data-words='["DRF APIs at Nickelfox","RAG-based contextual question generation","PostgreSQL query tuning","Redis caching layers","Celery task pipelines"]'>DRF APIs at Nickelfox</span><span class="caret">▌</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#projects">
+            See engineering highlights
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="mailto:omgupta.se@gmail.com">
+            omgupta.se@gmail.com
+          </a>
+        </div>
+
+        <!-- Live stats strip -->
+        <ul class="stats" aria-label="Engineering impact">
+          <li>
+            <span class="stats__num" data-target="2000" data-suffix="+">0</span>
+            <span class="stats__label">users served in prod</span>
+          </li>
+          <li>
+            <span class="stats__num" data-target="30" data-suffix="%">0</span>
+            <span class="stats__label">faster Postgres queries</span>
+          </li>
+          <li>
+            <span class="stats__num" data-target="50" data-suffix="%">0</span>
+            <span class="stats__label">lower API latency</span>
+          </li>
+          <li>
+            <span class="stats__num" data-target="200" data-suffix="+">0</span>
+            <span class="stats__label">concurrent users supported</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Tech stack: bento -->
+      <section id="stack" class="section">
+        <header class="section__head">
+          <span class="section__index">01 / Stack</span>
+          <h2 class="section__title">The toolbelt</h2>
+          <p class="section__lede">
+            What I reach for when latency, correctness, and clean modularity
+            all matter at the same time.
+          </p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__card bento__card--lg">
+            <header class="bento__head">
+              <span class="bento__icon">{ }</span>
+              <h3>Backend &amp; APIs</h3>
+            </header>
+            <p class="bento__lede">
+              Service design first, framework second. REST and GraphQL,
+              event-driven where it earns its keep.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Django</li>
+              <li>DRF</li>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+              <li>REST</li>
+              <li>GraphQL</li>
+            </ul>
+          </article>
+
+          <article class="bento__card">
+            <header class="bento__head">
+              <span class="bento__icon">⌗</span>
+              <h3>Data &amp; intelligence</h3>
+            </header>
+            <ul class="chips">
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>SQL</li>
+              <li>OpenAI</li>
+              <li>LangChain</li>
+              <li>RAG</li>
+              <li>Vector search</li>
+            </ul>
+          </article>
+
+          <article class="bento__card">
+            <header class="bento__head">
+              <span class="bento__icon">⏣</span>
+              <h3>Infra &amp; DevOps</h3>
+            </header>
+            <ul class="chips">
+              <li>Docker</li>
+              <li>AWS · EC2</li>
+              <li>AWS · RDS</li>
+              <li>AWS · S3</li>
+              <li>Nginx</li>
+              <li>Linux</li>
+              <li>Git</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="bento__card bento__card--accent">
+            <header class="bento__head">
+              <span class="bento__icon">∞</span>
+              <h3>Async &amp; pipelines</h3>
+            </header>
+            <p class="bento__lede">
+              Heavy I/O off the request path. Workers, queues, retries,
+              backoff, dead-letters.
+            </p>
+            <ul class="chips">
+              <li>Celery</li>
+              <li>Redis Queue</li>
+              <li>Selenium</li>
+              <li>Cron</li>
+            </ul>
+          </article>
+
+          <article class="bento__card">
+            <header class="bento__head">
+              <span class="bento__icon">◐</span>
+              <h3>Frontend (just enough)</h3>
+            </header>
+            <ul class="chips">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Postman</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience timeline -->
+      <section id="experience" class="section">
+        <header class="section__head">
+          <span class="section__index">02 / Experience</span>
+          <h2 class="section__title">Where I’ve worked</h2>
+          <p class="section__lede">
+            Two roles so far — one current, one prior internship — both
+            shipping to live users.
+          </p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__marker">
+              <span class="dot dot--live"></span>
+            </div>
+            <article class="timeline__card">
+              <header class="timeline__head">
+                <div>
+                  <h3 class="timeline__role">Software Development Engineer</h3>
+                  <p class="timeline__org">
+                    Nickelfox Technologies Pvt Ltd
+                    <span class="muted">· Internship Nov 2024 → Feb 2025</span>
+                  </p>
+                </div>
+                <span class="timeline__when">Feb 2025 — Present</span>
+              </header>
+              <ul class="bullets">
+                <li>
+                  Contributing to live applications serving
+                  <strong>2,000+ users</strong>; integrated
+                  <strong>RAG</strong> to dynamically generate contextual
+                  questions and shipped fixes for critical API bugs and
+                  third-party integrations.
+                </li>
+                <li>
+                  Designed RESTful APIs in <strong>DRF</strong> with
+                  PostgreSQL connection pooling and query tuning, improving
+                  query performance by <strong>~30%</strong> under load.
+                </li>
+                <li>
+                  Hardened the platform with structured error handling,
+                  centralized logging, and a <strong>Redis</strong> caching
+                  layer aligned to enterprise patterns.
+                </li>
+                <li>
+                  Accelerated delivery using <strong>Claude</strong> (Skills,
+                  Agents, MCP) to automate repetitive work and code paths.
+                </li>
+                <li>
+                  Worked directly with clients and PMs to translate business
+                  needs into scalable backend solutions.
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker">
+              <span class="dot"></span>
+            </div>
+            <article class="timeline__card">
+              <header class="timeline__head">
+                <div>
+                  <h3 class="timeline__role">
+                    Software Development Engineer · Intern
+                  </h3>
+                  <p class="timeline__org">Signimus Technologies Pvt Ltd</p>
+                </div>
+                <span class="timeline__when">Oct 2023 — Feb 2024</span>
+              </header>
+              <ul class="bullets">
+                <li>
+                  Engineered a conversational AI app on the
+                  <strong>OpenAI API</strong> with caching and rate limiting,
+                  pushing response accuracy up by <strong>~80%</strong>.
+                </li>
+                <li>
+                  Architected a Python/Django backend on
+                  <strong>AWS EC2/RDS</strong> with load balancing for
+                  <strong>200+ concurrent users</strong>.
+                </li>
+                <li>
+                  Optimized hot paths with <strong>Celery + Redis</strong>,
+                  cutting API response times by <strong>~50%</strong>;
+                  automated workflows in Selenium that removed
+                  <strong>~90%</strong> of manual operator work.
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <header class="section__head">
+          <span class="section__index">03 / Projects</span>
+          <h2 class="section__title">Selected projects</h2>
+          <p class="section__lede">
+            A few things I’ve built end-to-end — backend, schema, and
+            infrastructure included.
+          </p>
+        </header>
+
+        <div class="projects">
+          <article class="project">
+            <header class="project__head">
+              <span class="project__tag">E-commerce · AI search</span>
+              <h3 class="project__title">Play-Ground</h3>
+              <p class="project__sub">
+                Bridging relational filtering with semantic intent.
+              </p>
+            </header>
+            <ul class="bullets">
+              <li>
+                Hybrid search engine pairing PostgreSQL filters with vector
+                embeddings for intent-based discovery.
+              </li>
+              <li>
+                Stripe payments, secure auth, and a dynamic review system on a
+                mobile-responsive Django stack.
+              </li>
+              <li>
+                <strong>~25% faster</strong> queries via strategic indexing,
+                QuerySet tuning, and Redis caching.
+              </li>
+            </ul>
+            <footer class="project__foot">
+              <span class="project__when">Mar 2024 — Jun 2024</span>
+              <a
+                class="project__link"
+                href="https://github.com/omgupta2202/Play-ground"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view repo
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </footer>
+          </article>
+
+          <article class="project">
+            <header class="project__head">
+              <span class="project__tag">LLM · async infra</span>
+              <h3 class="project__title">LuminaAI</h3>
+              <p class="project__sub">
+                Conversational systems with persistent memory.
+              </p>
+            </header>
+            <ul class="bullets">
+              <li>
+                LLM-orchestration layer with multi-turn memory and stable
+                context across sessions.
+              </li>
+              <li>
+                Celery + Redis pipeline offloads heavy I/O so the request path
+                stays smooth under bursty traffic.
+              </li>
+              <li>
+                Modular service boundaries to swap providers without rewiring
+                the app.
+              </li>
+            </ul>
+            <footer class="project__foot">
+              <span class="project__when">Personal · 2024</span>
+              <a
+                class="project__link"
+                href="https://github.com/omgupta2202/Lumina-AI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view repo
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </footer>
+          </article>
+
+          <article class="project">
+            <header class="project__head">
+              <span class="project__tag">CRM · analytics</span>
+              <h3 class="project__title">CRM Application</h3>
+              <p class="project__sub">
+                Pipeline visibility for actual humans.
+              </p>
+            </header>
+            <ul class="bullets">
+              <li>
+                Custom middleware, Django signals, and clean API endpoints
+                powering a real-time analytics dashboard.
+              </li>
+              <li>
+                Sentry for error visibility and PostHog for product analytics
+                — debug and decide on the same evidence.
+              </li>
+              <li>
+                Notification pipeline via signals and email services,
+                improving outbound communication efficiency by ~25%.
+              </li>
+            </ul>
+            <footer class="project__foot">
+              <span class="project__when">Sep 2023 — Nov 2023</span>
+              <a class="project__link" href="https://github.com/omgupta2202" target="_blank" rel="noopener noreferrer">
+                more on github
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <article class="card card--padded">
+          <span class="section__index">04 / Education</span>
+          <h2 class="card__title">Education</h2>
+          <ul class="edu">
+            <li>
+              <div class="edu__row">
+                <h4>B.Tech · Computer Science &amp; Engineering</h4>
+                <span class="muted">Apr 2021 — Apr 2025</span>
+              </div>
+              <p>KIET Group of Institutions, Ghaziabad · CGPA 7.56</p>
+            </li>
+            <li>
+              <div class="edu__row">
+                <h4>Class XII · CBSE</h4>
+                <span class="muted">Apr 2018 — Apr 2020</span>
+              </div>
+              <p>Maharishi Vidya Mandir, Orai · 95%</p>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--contact">
+        <div class="contact">
+          <span class="section__index">05 / Contact</span>
+          <h2 class="contact__title">
+            Let’s <span class="accent">work together</span>.
+          </h2>
+          <p class="contact__lede">
+            Open to backend and full-stack engineering roles, or interesting
+            collaborations on Django, FastAPI, or LLM-backed projects.
+          </p>
+
+          <div class="contact__grid">
+            <a class="contact__link" href="mailto:omgupta.se@gmail.com">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">omgupta.se@gmail.com</span>
+            </a>
+            <a class="contact__link" href="tel:+917275676734">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+91 72756 76734</span>
+            </a>
+            <a
+              class="contact__link"
+              href="https://github.com/omgupta2202"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">@omgupta2202</span>
+            </a>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/omgupta2202/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">in/omgupta2202</span>
+            </a>
+            <a
+              class="contact__link"
+              href="https://leetcode.com/u/omgupta2202/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact__label">LeetCode</span>
+              <span class="contact__value">u/omgupta2202</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>© <span id="year">2026</span> Om Gupta · built &amp; deployed solo</span>
+      <span class="muted">v2026.1 · static · netlify</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
