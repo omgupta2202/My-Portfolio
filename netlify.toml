@@ -1,5 +1,10 @@
 [build]
   publish = "."
+  command = ""
+
+[build.environment]
+  NETLIFY_USE_PNPM = "false"
+  NETLIFY_SKIP_PYTHON_INSTALL = "true"
 
 [[headers]]
   for = "/*"
